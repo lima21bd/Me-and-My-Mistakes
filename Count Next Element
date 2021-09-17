@@ -1,0 +1,27 @@
+Problem Link: https://binarysearch.com/problems/Count-Next-Element
+
+class Solution:
+
+    def solve(self, nums):
+
+        set1 = set(nums)
+        length = len(set1)
+        count = 0
+
+        if length <= 1:
+
+                count = 0
+
+        else:
+
+            for i in nums:
+
+                add_one = i + 1
+                
+                if add_one in set1:
+
+                    count = count + 1
+
+        return count
+
+# I am amazed at the beauty of the 'Set'.
